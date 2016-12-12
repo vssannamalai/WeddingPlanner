@@ -1,0 +1,175 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RatingReviewEngineLogin.master.cs" Inherits="RatingReviewEngine.Web.RatingReviewEngineLogin" %>
+
+<%@ Register Src="~/UserControl/ucLogin.ascx" TagPrefix="uc1" TagName="ucLogin" %>
+<%@ Register Src="~/UserControl/ucForgotPassword.ascx" TagPrefix="uc2" TagName="ucForgotPassword" %>
+
+
+<!DOCTYPE html>
+<meta http-equiv="CACHE-CONTROL" content="no-cache, no-store">
+<meta http-equiv="Pragma" content="no-cache">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MICHAEL HILL - RATINGS & REVIEWS ENGINE</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-dialog.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet" />
+    <link href="js/bootstrapvalidator/dist/css/bootstrapValidator.css" rel="stylesheet" />
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet" />
+
+    <!-- Kendo styles -->
+    <link href="kendo_styles/kendo.common-bootstrap.min.css" rel="stylesheet" />
+    <link href="kendo_styles/kendo.bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles -->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <!--[if gte IE 6 ]>
+        <script src="js/css3-mediaqueries.js"></script>
+        <link href="css/iecss.css" rel="stylesheet" />
+    <![endif]-->
+
+    <!-- Load JS here for greater good -->
+    <%--  <script src="js/jquery-1.8.3.min.js"></script>--%>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+    <script src="jQuery-File-Upload-master/js/vendor/jquery.ui.widget.js"></script>
+    <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+    <script src="jQuery-File-Upload-master/js/jquery.iframe-transport.js"></script>
+    <!-- The basic File Upload plugin -->
+    <script src="jQuery-File-Upload-master/js/jquery.fileupload.js"></script>
+
+    <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
+    <!--[if (gte IE 8)&(lt IE 10)]>
+    <script src="jQuery-File-Upload-master/js/cors/jquery.xdr-transport.js"></script>
+    <![endif]-->
+
+
+    <script src="js/jquery.ie.cors.js"></script>
+    <%-- <script src="js/jquery.corsproxy.1.0.0.js"></script>--%>
+
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/Cookie.js"></script>
+    <script src="js/aes.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-dialog.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <script src="js/bootstrapvalidator/dist/js/bootstrapValidator.js"></script>
+    <!-- Kendo JS -->
+    <script src="kendo_js/jquery.min.js"></script>
+    <script>
+        var $kendoJS = jQuery.noConflict();
+    </script>
+
+
+    <script src="kendo_js/kendo.web.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/mhj-common.js"></script>
+    <script src="js/mhj-ratingreviewengine.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ($("#hdnUserName").val() == '') {
+                $("#divMenu").hide();
+                $("#divLogout").hide();
+                $("#divLogin").show();
+                $("#divRegister").show();
+
+                $(".h2").addClass("custom-h2");
+            }
+        });
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="contentPlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onunload="">
+    <form id="frmRatingReviewEngine" runat="server" autocomplete="off">
+        <asp:HiddenField ID="hdnAPIUrl" runat="server" />
+        <asp:HiddenField ID="hdnApplicationAPIToken" runat="server" />
+        <asp:HiddenField ID="hdnUserName" runat="server" />
+        <asp:HiddenField ID="hdnUserId" runat="server" />
+        <asp:HiddenField ID="hdnAuthToken" runat="server" />
+        <asp:HiddenField ID="hdnAuthProvider" runat="server" />
+        <asp:HiddenField ID="hdnWebUrl" runat="server" />
+        <asp:HiddenField ID="hdnCommunityOwnerId" runat="server" />
+        <asp:HiddenField ID="hdnSupplierId" runat="server" />
+        <asp:HiddenField ID="hdnOAuthAccountID" runat="server" />
+        <asp:HiddenField ID="hdnFileUploadUrl" runat="server" />
+        <div id="progress" style="display: none; position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; overflow: hidden; padding: 0; margin: 0; background-color: #F0F0F0; filter: alpha(opacity=50); opacity: 0.5; z-index: 100000;">
+            <div style="align-content: center; margin-top: 25%; margin-left: 48%">
+                <img src="kendo_styles/BlueOpal/loading_2x.gif" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar navbar-inverse navbar-fixed-top custom-header-height custom-header-panel">
+                <div class="container">
+                    <div class="navbar-header custom-header-height col-md-6 pull-left">
+                        <a class="navbar-brand custom-header-title-padding" href="Home.aspx">Ratings & Reviews Engine</a>
+                    </div>
+                    <div id="divEmailId" class="navbar-header custom-header-height col-md-5">
+                        <div id="email" runat="server" class="custom-email-align"></div>
+                    </div>
+                    <div id="divLogout" class="navbar-header custom-header-height col-md-1 pull-right">
+                        <a id="logout" class="navbar-brand custom-logout-align">Logout</a>
+                    </div>
+                    <div id="divLogin" class="navbar-header custom-header-height col-md-1 pull-right" style="display: none">
+                        <a id="login" class="navbar-brand custom-logout-align" data-target="#loginModal" data-toggle="modal">Login</a>
+                    </div>
+
+                    <div id="divRegister" class="navbar-header custom-header-height col-md-1 pull-right" style="display: none">
+                        <a id="register" href="Register.aspx" class="navbar-brand custom-logout-align">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="contentPlaceHolderBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%--Modal Popup--%>
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999;">
+                <uc1:ucLogin runat="server" ID="ucLogin" />
+            </div>
+            <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999; overflow:hidden">
+                <uc2:ucForgotPassword runat="server" id="ucForgotPassword" />
+            </div>
+
+            <hr />
+            <footer class="custom-footer-style">
+                <div class="row payment-types" style="margin-bottom: 20px;">
+                    <div class="col-md-4">
+                        <a class="Visa" alt="Visa" title="Visa">Visa</a>
+                        <a class="Mastercard" alt="Mastercard" title="Mastercard">Mastercard</a>
+                        <%--<li><a class="Amex" alt="Amex" title="Amex">Amex</a></li>
+                            <li><a class="Paypal" alt="PayPal" title="PayPal">PayPal</a></li>--%>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="col-md-6 custom-footer-ul">
+                        <li class="custom-footer-li"><a href="Terms.aspx" class="custom-anchor">Terms & Conditions</a></li>
+                        <li class="custom-footer-li"><a href="Privacy.aspx" class="custom-anchor">Privacy Policy</a></li>
+                        <li class="custom-footer-li"><a href="AboutUs.aspx" class="custom-anchor">About Us</a></li>
+                        <li class="custom-footer-li"><a href="ContactUs.aspx" class="custom-anchor">Contact Us</a></li>
+                    </ul>
+                    <div class="col-md-6 pull-right" style="margin-right: -3%;">
+                        <p class="custom-copyrights-font custom-footer-p">Copyright &copy; 1995-2014 Michael Hill All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;"></div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{302EB911-A21D-44E7-99D8-2DDC57F9F414}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RatingReviewEngine.Entities</RootNamespace>
+    <AssemblyName>RatingReviewEngine.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\Staging\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRights.cs" />
+    <Compile Include="ActionInsertRequest.cs" />
+    <Compile Include="ActionResponse.cs" />
+    <Compile Include="Actions.cs" />
+    <Compile Include="AdminTransactionHistory.cs" />
+    <Compile Include="ApplicationAuthentication.cs" />
+    <Compile Include="ApplicationConnections.cs" />
+    <Compile Include="BankAccount.cs" />
+    <Compile Include="BillingReference.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Community.cs" />
+    <Compile Include="CommunityGroup.cs" />
+    <Compile Include="CommunityGroupBillingFee.cs" />
+    <Compile Include="CommunityGroupFeeList.cs" />
+    <Compile Include="CommunityGroupReward.cs" />
+    <Compile Include="CommunityGroupSupplier.cs" />
+    <Compile Include="CommunityOwnerTransactionHistory.cs" />
+    <Compile Include="CommunityReward.cs" />
+    <Compile Include="CommunityGroupRewardList.cs" />
+    <Compile Include="CommunitySupplier.cs" />
+    <Compile Include="ContactUs.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="CreditAllocationTypes.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="CurrencyList.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerAvatar.cs" />
+    <Compile Include="CustomerCommunity.cs" />
+    <Compile Include="CustomerPointsTally.cs" />
+    <Compile Include="CustomerQuote.cs" />
+    <Compile Include="CustomerRewards.cs" />
+    <Compile Include="CustomerSupplierActionAttachment.cs" />
+    <Compile Include="CustomerSupplierCommunication.cs" />
+    <Compile Include="EntityOAuthAccount.cs" />
+    <Compile Include="GlobalConstants.cs" />
+    <Compile Include="ErrorLogs.cs" />
+    <Compile Include="MenuItem.cs" />
+    <Compile Include="OAuthAccount.cs" />
+    <Compile Include="Owner.cs" />
+    <Compile Include="OwnerBankingDetails.cs" />
+    <Compile Include="Payflow.cs" />
+    <Compile Include="PaymentTransaction.cs" />
+    <Compile Include="PaypalTransaction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Review.cs" />
+    <Compile Include="ReviewHelpful.cs" />
+    <Compile Include="ReviewResponse.cs" />
+    <Compile Include="ServiceRequest\AccountActivationRequest.cs" />
+    <Compile Include="ServiceRequest\CommunitySearchRequest.cs" />
+    <Compile Include="ServiceRequest\CustomerSearchRequest.cs" />
+    <Compile Include="ServiceRequest\ExportAdminTransactionRequest.cs" />
+    <Compile Include="ServiceRequest\ExportCommunityOwnerTransactionRequest.cs" />
+    <Compile Include="ServiceRequest\ExportSupplierCommunityTransactionRequest.cs" />
+    <Compile Include="ServiceRequest\LoginRequest.cs" />
+    <Compile Include="ServiceRequest\PaymentRequest.cs" />
+    <Compile Include="ServiceRequest\SearchRequest.cs" />
+    <Compile Include="ServiceRequest\ServiceRequestBase.cs" />
+    <Compile Include="ServiceRequest\SupplierTransactionHistoryRequest.cs" />
+    <Compile Include="ServiceResponse\AccountActivationResponse.cs" />
+    <Compile Include="ServiceResponse\CommunityDetailResponse.cs" />
+    <Compile Include="ServiceResponse\CommunityDetailChildResponse.cs" />
+    <Compile Include="ServiceResponse\CommunityGroupDetailChildResponse.cs" />
+    <Compile Include="ServiceResponse\CommunityGroupDetailResponse.cs" />
+    <Compile Include="ServiceResponse\CustomerTransactionResponse.cs" />
+    <Compile Include="ServiceResponse\LoginResponse.cs" />
+    <Compile Include="ServiceResponse\RegisterAccountResponse.cs" />
+    <Compile Include="ServiceResponse\SupplierBillingResponse.cs" />
+    <Compile Include="ServiceResponse\SupplierReviewResponse.cs" />
+    <Compile Include="ServiceResponse\ServiceResponseBase.cs" />
+    <Compile Include="ServiceResponse\SupplierDashboardResponse.cs" />
+    <Compile Include="ServiceResponse\SupplierTransactionResponse.cs" />
+    <Compile Include="SocialMedia.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierAction.cs" />
+    <Compile Include="SupplierActivity.cs" />
+    <Compile Include="SupplierBankingDetails.cs" />
+    <Compile Include="SupplierCategory.cs" />
+    <Compile Include="SupplierCommunityBillFreeOverride.cs" />
+    <Compile Include="SupplierCommunityCount.cs" />
+    <Compile Include="SupplierCommunityGroupCount.cs" />
+    <Compile Include="SupplierCommunityTransactionHistory.cs" />
+    <Compile Include="SupplierCreditAllocations.cs" />
+    <Compile Include="SupplierCustomerNote.cs" />
+    <Compile Include="SupplierIcon.cs" />
+    <Compile Include="SupplierLogo.cs" />
+    <Compile Include="SupplierShortlist.cs" />
+    <Compile Include="SupplierSocialReference.cs" />
+    <Compile Include="SupplierTransactions.cs" />
+    <Compile Include="TransactionSearch.cs" />
+    <Compile Include="TriggeredEvent.cs" />
+    <Compile Include="TriggeredEventList.cs" />
+    <Compile Include="UserSecurity.cs" />
+    <Compile Include="VirtualCommunityAccount.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

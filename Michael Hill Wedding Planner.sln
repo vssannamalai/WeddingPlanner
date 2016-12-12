@@ -1,0 +1,132 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingReviewEngine.DAC", "RatingReviewEngine.DAC\RatingReviewEngine.DAC.csproj", "{812E4A06-ACDC-47CD-A49B-4BA6F11A6C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingReviewEngine.Entities", "RatingReviewEngine.Entities\RatingReviewEngine.Entities.csproj", "{302EB911-A21D-44E7-99D8-2DDC57F9F414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingReviewEngineUnitTest", "RatingReviewEngineUnitTest\RatingReviewEngineUnitTest.csproj", "{2DD21878-3AAA-4B0B-8E54-9AD37FF3C7A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingReviewEngine.API", "RatingReviewEngine.API\RatingReviewEngine.API.csproj", "{A4D56530-0D88-4630-8FBC-D5DD00644FEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference Dlls", "Reference Dlls", "{1530654E-BAA3-4AA8-B0CE-74BE6FDA3B8B}"
+	ProjectSection(SolutionItems) = preProject
+		Reference Dlls\Common.Logging.dll = Reference Dlls\Common.Logging.dll
+		Reference Dlls\EntLibContrib.Common.dll = Reference Dlls\EntLibContrib.Common.dll
+		Reference Dlls\EntLibContrib.Data.MySql.dll = Reference Dlls\EntLibContrib.Data.MySql.dll
+		Reference Dlls\Microsoft.Practices.EnterpriseLibrary.Common.dll = Reference Dlls\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Reference Dlls\Microsoft.Practices.EnterpriseLibrary.Configuration.dll = Reference Dlls\Microsoft.Practices.EnterpriseLibrary.Configuration.dll
+		Reference Dlls\Microsoft.Practices.EnterpriseLibrary.Data.dll = Reference Dlls\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Reference Dlls\Microsoft.Practices.ServiceLocation.dll = Reference Dlls\Microsoft.Practices.ServiceLocation.dll
+		Reference Dlls\Microsoft.Practices.Unity.Configuration.dll = Reference Dlls\Microsoft.Practices.Unity.Configuration.dll
+		Reference Dlls\Microsoft.Practices.Unity.dll = Reference Dlls\Microsoft.Practices.Unity.dll
+		Reference Dlls\Microsoft.Practices.Unity.Interception.Configuration.dll = Reference Dlls\Microsoft.Practices.Unity.Interception.Configuration.dll
+		Reference Dlls\Microsoft.Practices.Unity.Interception.dll = Reference Dlls\Microsoft.Practices.Unity.Interception.dll
+		Reference Dlls\MySql.Data.dll = Reference Dlls\MySql.Data.dll
+		Reference Dlls\Quartz.dll = Reference Dlls\Quartz.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "entlib-contrib", "entlib-contrib", "{F8FBBDA4-FC46-4EE0-BFA8-67FDB8586937}"
+	ProjectSection(SolutionItems) = preProject
+		Reference Dlls\entlib-contrib\Autofac.Configuration.dll = Reference Dlls\entlib-contrib\Autofac.Configuration.dll
+		Reference Dlls\entlib-contrib\Autofac.dll = Reference Dlls\entlib-contrib\Autofac.dll
+		Reference Dlls\entlib-contrib\Castle.Core.dll = Reference Dlls\entlib-contrib\Castle.Core.dll
+		Reference Dlls\entlib-contrib\Castle.Windsor.dll = Reference Dlls\entlib-contrib\Castle.Windsor.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Common.Configuration.Autofac.dll = Reference Dlls\entlib-contrib\EntLibContrib.Common.Configuration.Autofac.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Common.Configuration.Windsor.dll = Reference Dlls\entlib-contrib\EntLibContrib.Common.Configuration.Windsor.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Common.dll = Reference Dlls\entlib-contrib\EntLibContrib.Common.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Data.MySql.dll = Reference Dlls\entlib-contrib\EntLibContrib.Data.MySql.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Data.OdpNet.dll = Reference Dlls\entlib-contrib\EntLibContrib.Data.OdpNet.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.ExceptionHandling.dll = Reference Dlls\entlib-contrib\EntLibContrib.ExceptionHandling.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Logging.dll = Reference Dlls\entlib-contrib\EntLibContrib.Logging.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.PolicyInjection.CallHandlers.dll = Reference Dlls\entlib-contrib\EntLibContrib.PolicyInjection.CallHandlers.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Query.Database.dll = Reference Dlls\entlib-contrib\EntLibContrib.Query.Database.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Query.dll = Reference Dlls\entlib-contrib\EntLibContrib.Query.dll
+		Reference Dlls\entlib-contrib\EntLibContrib.Validation.dll = Reference Dlls\entlib-contrib\EntLibContrib.Validation.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Common.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Data.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Logging.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Validation.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.ServiceLocation.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.ServiceLocation.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.Configuration.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.Configuration.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.Interception.Configuration.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.Interception.Configuration.dll
+		Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.Interception.dll = Reference Dlls\entlib-contrib\Microsoft.Practices.Unity.Interception.dll
+		Reference Dlls\entlib-contrib\mysql.data.dll = Reference Dlls\entlib-contrib\mysql.data.dll
+		Reference Dlls\entlib-contrib\Oracle.DataAccess.dll = Reference Dlls\entlib-contrib\Oracle.DataAccess.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingReviewEngine.Business", "RatingReviewEngine.Business\RatingReviewEngine.Business.csproj", "{661AAB2F-4C2C-4F57-8412-846C0B91692B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingReviewEngine.Web", "RatingReviewEngine.Web\RatingReviewEngine.Web.csproj", "{EE8BD7EE-82D7-49A5-9B7E-34DA1E417FB5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4D56530-0D88-4630-8FBC-D5DD00644FEA} = {A4D56530-0D88-4630-8FBC-D5DD00644FEA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingReviewEngine.WorldPay", "RatingReviewEngine.WorldPay\RatingReviewEngine.WorldPay.csproj", "{7998BBCC-DD80-4B81-AF57-C210E2C79F4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{812E4A06-ACDC-47CD-A49B-4BA6F11A6C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812E4A06-ACDC-47CD-A49B-4BA6F11A6C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812E4A06-ACDC-47CD-A49B-4BA6F11A6C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812E4A06-ACDC-47CD-A49B-4BA6F11A6C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{812E4A06-ACDC-47CD-A49B-4BA6F11A6C7B}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{812E4A06-ACDC-47CD-A49B-4BA6F11A6C7B}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{302EB911-A21D-44E7-99D8-2DDC57F9F414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302EB911-A21D-44E7-99D8-2DDC57F9F414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302EB911-A21D-44E7-99D8-2DDC57F9F414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302EB911-A21D-44E7-99D8-2DDC57F9F414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302EB911-A21D-44E7-99D8-2DDC57F9F414}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{302EB911-A21D-44E7-99D8-2DDC57F9F414}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{2DD21878-3AAA-4B0B-8E54-9AD37FF3C7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD21878-3AAA-4B0B-8E54-9AD37FF3C7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD21878-3AAA-4B0B-8E54-9AD37FF3C7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD21878-3AAA-4B0B-8E54-9AD37FF3C7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD21878-3AAA-4B0B-8E54-9AD37FF3C7A7}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{2DD21878-3AAA-4B0B-8E54-9AD37FF3C7A7}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{A4D56530-0D88-4630-8FBC-D5DD00644FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D56530-0D88-4630-8FBC-D5DD00644FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D56530-0D88-4630-8FBC-D5DD00644FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D56530-0D88-4630-8FBC-D5DD00644FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D56530-0D88-4630-8FBC-D5DD00644FEA}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{A4D56530-0D88-4630-8FBC-D5DD00644FEA}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{661AAB2F-4C2C-4F57-8412-846C0B91692B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661AAB2F-4C2C-4F57-8412-846C0B91692B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661AAB2F-4C2C-4F57-8412-846C0B91692B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661AAB2F-4C2C-4F57-8412-846C0B91692B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661AAB2F-4C2C-4F57-8412-846C0B91692B}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{661AAB2F-4C2C-4F57-8412-846C0B91692B}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{EE8BD7EE-82D7-49A5-9B7E-34DA1E417FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8BD7EE-82D7-49A5-9B7E-34DA1E417FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8BD7EE-82D7-49A5-9B7E-34DA1E417FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8BD7EE-82D7-49A5-9B7E-34DA1E417FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8BD7EE-82D7-49A5-9B7E-34DA1E417FB5}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{EE8BD7EE-82D7-49A5-9B7E-34DA1E417FB5}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{7998BBCC-DD80-4B81-AF57-C210E2C79F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7998BBCC-DD80-4B81-AF57-C210E2C79F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7998BBCC-DD80-4B81-AF57-C210E2C79F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7998BBCC-DD80-4B81-AF57-C210E2C79F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7998BBCC-DD80-4B81-AF57-C210E2C79F4C}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{7998BBCC-DD80-4B81-AF57-C210E2C79F4C}.Staging|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8FBBDA4-FC46-4EE0-BFA8-67FDB8586937} = {1530654E-BAA3-4AA8-B0CE-74BE6FDA3B8B}
+	EndGlobalSection
+EndGlobal

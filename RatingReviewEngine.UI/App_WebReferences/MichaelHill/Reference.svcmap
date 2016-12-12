@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="912ff1cb-f4a1-465a-a7fa-7933b60fa52d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:19406/RatingReviewEngineAPI.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RatingReviewEngineAPI.disco" MetadataType="Disco" ID="9e5064c0-a1bb-4bb5-94a3-9bec63b43a24" SourceId="1" SourceUrl="http://localhost:19406/RatingReviewEngineAPI.svc?disco" />
+    <MetadataFile FileName="RatingReviewEngineAPI.xsd" MetadataType="Schema" ID="20a24a00-c049-4798-adaf-2fb6b8070019" SourceId="1" SourceUrl="http://localhost:19406/RatingReviewEngineAPI.svc?xsd=xsd2" />
+    <MetadataFile FileName="RatingReviewEngineAPI1.xsd" MetadataType="Schema" ID="a1658e0f-f7c8-44bc-950b-275ca42c5f47" SourceId="1" SourceUrl="http://localhost:19406/RatingReviewEngineAPI.svc?xsd=xsd0" />
+    <MetadataFile FileName="RatingReviewEngineAPI2.xsd" MetadataType="Schema" ID="5e218b96-9667-4a56-a822-c278f0425e64" SourceId="1" SourceUrl="http://localhost:19406/RatingReviewEngineAPI.svc?xsd=xsd1" />
+    <MetadataFile FileName="RatingReviewEngineAPI.wsdl" MetadataType="Wsdl" ID="2d648333-4155-4e28-b7a5-d0606768f485" SourceId="1" SourceUrl="http://localhost:19406/RatingReviewEngineAPI.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

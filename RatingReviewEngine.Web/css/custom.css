@@ -1,0 +1,1041 @@
+﻿/****************************Default Style Start***************************/
+.k-animation-container, .k-widget, .k-widget *, .k-animation-container *, .k-widget *:before, .k-animation-container *:after {
+    box-sizing: content-box;
+    table-layout: fixed;
+}
+
+h2 {
+    font-size: 30px !important;
+    margin-top: 100px;
+}
+
+h4 {
+    font-size: 18px !important;
+}
+
+.custom-checkbox-textalign {
+    text-align: left;
+    line-height: 0.5 !important;
+}
+
+.custom-header {
+    font-size: 30px !important;
+    margin-top: 70px;
+}
+
+.custom-anchor {
+    color: #3498DB !important;
+    cursor: pointer;
+    font-size: 14px !important;
+    word-wrap: break-word;
+}
+
+    .custom-anchor:hover {
+        color: #3498DB !important;
+        text-decoration: underline !important;
+    }
+
+.custom-gridheader-anchor {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .custom-gridheader-anchor:hover {
+        color: #3498DB !important;
+        text-decoration: underline !important;
+    }
+
+.custom-visible {
+    display: block !important;
+}
+
+.custom-hide {
+    display: none !important;
+}
+
+.custom-default-bottom-margin {
+    margin-bottom: 10px;
+}
+
+.custom-default-top-margin {
+    margin-top: 10px;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.custom-field-label-fontstyle {
+    font-size: 15px !important;
+    font-weight: bold;
+    line-height: 1.0;
+    float: left;
+}
+
+.custom-contact-field-label-fontstyle {
+    font-size: 15px !important;
+    font-weight: bold;    
+    float: left;
+}
+
+.custom-field-div-textleft {
+    text-align: left;
+}
+
+.custom-menu-anchor {
+    white-space: normal !important;
+}
+
+.k-calendar .k-header {
+    background-color: #f5f5f5 !important;
+}
+
+.k-datepicker {
+    width: 9.4em !important;
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 35% !important;
+    left: 35%;
+    right: 35%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1350px) {
+
+    .modal-dialog {
+        position: absolute;
+        top: 32% !important;
+        left: 21%;
+        right: 21%;
+    }
+}
+
+label {
+    word-break: normal;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+a {
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+span {
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+td {
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+.custom-dropdown-width {
+    width: 100% !important;
+}
+
+.custom-footer-ul {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+.custom-footer-li {
+    display: inline;
+    margin-right: 2%;
+}
+
+.custom-footer-p {
+    text-align: right;
+}
+
+.custom-h2 {
+    margin-top: 150px;
+}
+
+/****************Kendo DropDown*****************/
+
+.k-dropdown-wrap {
+    width: auto;
+    background-color: #1ABC9C !important;
+}
+
+.k-i-arrow-s {
+    background-position: -177px -210px !important;
+}
+
+.k-dropdown .k-input, .k-dropdown .k-state-focused .k-input, .k-menu .k-popup {
+    color: white !important;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+/*#ddlCommunity_listbox li {
+    width: auto !important;
+    overflow: auto;
+}
+
+#ddlCommunityGroup_listbox li {
+    width: auto !important;
+    overflow: auto;
+}*/
+
+/****************************Master Page Start****************************/
+
+.custom-header-panel {
+    z-index: 9999 !important;
+}
+
+.custom-footer-style {
+    color: #34495E !important;
+    background-color: white !important;
+}
+
+.custom-header-height {
+    height: 70px !important;
+}
+
+.custom-footer-height {
+    height: 140px !important;
+}
+
+.custom-header-title-padding {
+    padding: 21px 5px !important;
+}
+
+.custom-copyrights-font {
+    font-size: 14px !important;
+}
+
+.custom-logout-align {
+    float: right;
+    padding: 25px 0px !important;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.custom-email-align {
+    float: right;
+    padding: 25px 0px !important;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.042;
+}
+
+.custom-email-div {
+    margin-left: 50% !important;
+}
+
+/****************************Login Page Start****************************/
+
+.a:hover {
+    text-decoration: underline !important;
+}
+
+.custom-login-email-validation-off {
+    display: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+.custom-login-email-validation-on {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+.custom-login-register-font {
+    font-size: 14px !important;
+}
+
+.custom-login-footer-font {
+    font-size: 14px !important;
+}
+
+/*************************Settings Page Start**************************/
+
+.custom-settings-anchor {
+    color: #3498DB;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .custom-settings-anchor:hover {
+        color: #3498DB;
+        text-decoration: underline !important;
+    }
+
+/*************************Register Page Start**************************/
+
+.custom-register-email-span {
+    display: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+}
+
+/********************Register CommunityOwner Start*********************/
+
+.custom-regcomowner-button-continer-top-align {
+    margin-top: 80px;
+}
+
+.custom-regcomowner-email-validation-off {
+    display: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+.custom-regcomowner-email-validation-on {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+/*******************Community Detail Page Start*********************/
+
+.custom-communitydetail-description-container {
+    text-align: left;
+    width: 50%;
+}
+
+.custom-communitydetail-link-container {
+    text-align: right;
+    width: 50%;
+    top: 64px;
+}
+
+.custom-communitydetail-label-fontstyle {
+    font-size: 15px !important;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.custom-communitydetail-validation {
+    display: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+}
+
+.custom-communitydetail-checkbox-textalign {
+    text-align: left;
+    line-height: 0.5 !important;
+    padding: 5px 0px 0px 30px;
+}
+
+.custom-communitydetail-label-width {
+    width: 60%;
+}
+
+.custom-communitydetail-labelcount-width {
+    width: 15%;
+}
+
+/******************Register Supplier Page Start*********************/
+
+.custom-regsupplier-register-top {
+    margin-top: 50px;
+}
+
+.custom-regsupplier-slash-align {
+    float: left;
+    margin: 3px 5px 0px 5px;
+}
+
+.custom-regsupplier-latlon-textbox {
+    float: left;
+    width: 242px;
+}
+
+.custom-regsupplier-updatemap-button {
+    float: right;
+    padding: 10px 55px 0px 0px;
+}
+
+.custom-regsupplier-search-textbox {
+    float: left;    
+    width: 60%;
+}
+
+.custom-regsupplier-search-button {
+    float: left;
+    margin-left: 15px;
+}
+
+.custom-regsupplier-remove-btn {
+    float: right;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.custom-regsupplier-logo_icon-size {
+    width: 150px;
+    height: 150px;    
+}
+
+/**************Community Owner Dashboard Page Start*****************/
+
+.custom-comownerdash-textbox-width {
+    width: 100%;
+}
+
+.custom-comownerdash-label-font {
+    font-size: 18px !important;
+}
+
+.custom-comownerdash-innerdiv {
+    margin-bottom: 20px;
+    line-height: 0.82222;
+}
+
+.custom-comownerdash-label-lineheight {
+    line-height: 1.0;
+}
+
+.custom-comownerdash-label-fontstyle {
+    font-size: 14px !important;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+.custom-comownerdash-button-rightalign {
+    margin-left: 9.5%;
+}
+
+.custom-comownerdash-managebutton-rightalign {
+    margin-left: 11%;
+}
+
+.custom-comownerdash-feebutton-div {
+    width: 35.0%;
+}
+
+.custom-comownerdash-slash-align {
+    float: left;
+    margin: 3px 0px 0px 9px;
+    width: 1%;
+}
+
+.custom-comownerdash-updatemap-button {
+    float: right;
+    padding: 10px 39px 0px 0px;
+}
+
+.custom-comownerdash-newcom-anchor {
+    padding: 15px 0px 0px 0px;
+}
+
+.custom-comownerdash-actinact-anchor {
+    font-size: 16px !important;
+    float: left;
+}
+
+.custom-comownerdash-checkbox-textalign {
+    line-height: 1.5 !important;
+    text-align: left;
+}
+
+/****************Supplier Community Group Detail Page Start******************/
+
+.custom-suppcommgroupdetail-col-md-11 {
+    width: 88.967%;
+    float: left;
+}
+
+.custom-suppcommgroupdetail-col-md-5 {
+    width: 44.7%;
+    float: left;
+}
+
+.custom-suppcommgroupdetail-col-md-4 {
+    width: 29.333%;
+    float: left;
+}
+
+.custom-suppcommgroupdetail-anchor-bold {
+    color: #3498DB;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+    .custom-suppcommgroupdetail-anchor-bold:hover {
+        color: #3498DB;
+        font-size: 18px;
+        text-decoration: underline !important;
+    }
+
+.custom-suppcommgroupdetail-listview-margin {
+    margin-left: 70px;
+}
+
+.custom-suppcommgroupdetail-managebutton-rightalign {
+    margin-left: 9%;
+}
+
+.custom-suppcommgroupdetail-label {
+    margin-right: 10px;
+    width: 45%;
+}
+
+.custom-suppcommgroupdetail-reviews {
+    padding: 0px 40px;
+}
+
+.custom-suppcommgroupdetail-div-text {
+    text-align: right;
+}
+
+/*********************New Community Page Start**********************/
+
+.custom-newcommunity-search-textbox {
+    float: left;
+    width: 60%;
+}
+
+.custom-newcommunity-search-button {
+    float: left;
+    margin-left: 15px;
+}
+
+.custom-newcommunity-latlon-textbox {
+    float: left;
+    width: 43%;
+    margin-left: 2%;
+}
+
+.custom-newcommunity-create-top {
+    margin-top: 20px;
+}
+
+/*****************Supplier Dashboard Page Start*********************/
+
+.custom-supplierdashboard-latlon-textbox {
+    float: left;
+    width: 37.5%;
+    margin-left: 2%;
+}
+
+.custom-supplierdashboard-search-button {
+    float: left;
+    margin-left: 15px;
+}
+
+.custom-supplierdashboard-updatemap-button {
+    float: left;
+    margin-left: 50.7%;
+    padding: 2%;
+}
+
+.custom-supplierdashboard-search-textbox {
+    float: left;
+    width: 54%;
+}
+
+.custom-supplierdashboard-col-md-4 {
+    width: 29.5%;
+    float: left;
+    margin-left: 1.3%;
+}
+
+.custom-supplierdashboard-button {
+    width: 46px;
+}
+
+.custom-supplierdashboard-remove-btn {
+    float: right;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.custom-supplierdashboard-image {
+    width: 170px;
+    height: 170px;    
+}
+
+.custom-supplierdashboard-button-rightalign {
+    margin-left: 19.5%;
+}
+
+.custom-supplierdashboard-logo_icon-div {
+    padding-left: 0px !important;
+}
+
+.custom-supplierdashboard-logo_icon-size {
+    width: 170px;
+    height: 170px;
+}
+
+.custom-supplierdashboard-innerdiv {
+    margin-bottom: 20px;
+    line-height: 0.82222;
+}
+
+.custom-supplierdashboard-label-lineheight {
+    line-height: 1.0;
+}
+
+.custom-supplierdashboard-textbox-width {
+    width: 100%;
+}
+
+.custom-supplierdashboard-quote-div {
+    padding-left: 15px !important;
+}
+
+.custom-supplierdashboard-label-fontstyle {
+    font-size: 14px !important;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+.custom-supplierdashboard-email-validation-off {
+    display: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+.custom-supplierdashboard-email-validation-on {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+.custom-supplierdashboard-socialmedia-margin {
+    margin-bottom: 10px;
+}
+
+.custom-supplierdash-button-rightalign {
+    margin-left: 9.5%;
+}
+
+.custom-supplierdash-savecancelbutton-rightalign {
+    margin-left: 19.5%;
+}
+
+/******************Manage My Communities Page Start*****************/
+
+.custom-managemycomm-col-md-2 {
+    width: 18.667%;
+    float: left;
+}
+
+.custom-managemycomm-form-group-padding {
+    padding-left: 15px;
+}
+
+.custom-managemycomm-validation {
+    display: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+    margin-left: 12%;
+}
+
+.custom-managemycomm-right-margin {
+    margin-right: 3.3%;
+}
+
+.custom-managemycomm-label-width {
+    width: 85%;
+}
+
+.custom-managemycomm-col-md-3 {
+    padding: 0% 1.5%;
+    width: 21%;
+    float: left;
+}
+
+/****************Manage Supplier Account Page Start*****************/
+
+.custom-supplieracc-lable {
+    line-height: 0 !important;
+}
+
+.custom-supplieracc-lable-content {
+    line-height: 1 !important;
+    font-weight: bold;
+}
+
+.custom-supplieracc-col-md-3 {
+    width: 21%;
+    float: left;
+}
+
+.custom-supplieracc-col-md-1 {
+    width: 3.7%;
+    float: left;
+    margin-left: 1%;
+}
+
+.custom-supplieracc-col-md-4 {
+    width: 35.8%;
+    float: left;
+    margin-left: 1.5%;
+}
+
+/********************Manage Currency  Page Start********************/
+
+.custom-mangcurency-validation-off {
+    display: none;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+.custom-mangcurency-validation-on {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.4;
+    color: #E74C3C;
+}
+
+.custom-mangcurency-col-md-2 {
+    width: 19.6667%;
+    float: left;
+    margin-left: 1%;
+}
+
+/****************Manage Triggered Events Page Start*****************/
+
+.custom-mangtrigevent-header-label {
+    font-size: 16px;
+    line-height: 1.3 !important;
+}
+
+.custom-mangtrigevent-td-divider {
+    background-color: #34495E;
+    height: 2px;
+}
+
+.custom-mangtrigevent-dropdown-bool {
+    width: 7.5em !important;
+}
+
+.custom-mangtrigevent-td-padding {
+    padding: 10px;
+}
+
+.custom-mangtrigevent-textbox {
+    height: 23px;
+    width: 78%;
+}
+
+/*********************Quote Detail Page Start**********************/
+
+.custom-quotedetail-innerdiv {
+    margin-bottom: 20px;
+    line-height: 0.82222;
+}
+
+.custom-quotedetail-label-lineheight {
+    line-height: 1.0;
+}
+
+.custom-quotedetail-label-fontstyle {
+    font-size: 14px !important;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+.custom-quotedetail-button-align {
+    margin-right: 15px;
+}
+
+.custom-quotedetail-checkbox-textalign {
+    line-height: 1.4 !important;
+    text-align: left;
+}
+
+.custom-quotedetail-div-bottom {
+    margin-bottom: 0px !important;
+}
+
+.custom-quotedetail-lable-height {
+    line-height: 1;
+}
+
+/****************Owner Community Detail Page Start*****************/
+
+.custom-ownercomdetail-textbox-width {
+    width: 72%;
+}
+
+.custom-ownercomdetail-dropdown-width {
+    width: 72% !important;
+}
+
+.custom-ownercomdetail-col-md-8 {
+    width: 62.6667%;
+    float: left;
+}
+
+.custom-ownercomdetail-col-md-4 {
+    width: 36.333%;
+    float: left;
+}
+
+.custom-ownercomdetail-anchor-lineheight {
+    line-height: 2.6em;
+}
+
+/*************Owner Community Group Detail Page Start***************/
+
+.custom-ownercomgrpdetail-textbox-width {
+    width: 24%;
+}
+
+.custom-ownercomgrpdetail-dropdown-width {
+    width: 24% !important;
+}
+
+.custom-ownercomgrpdetail-managebutton-rightalign {
+    margin-left: 9.5%;
+}
+
+.custom-ownercomgrpdetail-statistics-label {
+    width: 65%;
+}
+
+/******************Supplier Review Page Start******************/
+
+.custom-supplierreview-textarea {
+    width: 93%;
+}
+
+/**************Community Fee Management Page Start*************/
+
+.custom-comfeemang-checkbox-align {
+    text-align: left;
+}
+
+.custom-comfeemang-button-top {
+    margin-top: 20px;
+}
+
+.custom-comfeemang-col-md-5 {
+    float: left;
+    width: 49.667%;
+}
+
+/*************Management Community Owner Page Start************/
+
+.custom-mangcomown-button-width {
+    width: 76%;
+}
+
+.custom-mangcomown-margin-right {
+    margin-right: 2% !important;
+}
+
+.custom-mangcomown-btn {
+    font-size: 13px !important;
+    padding: 10px 15px !important;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+/**************Community Reward Management Page Start*************/
+
+.custom-comrewmang-checkbox-align {
+    text-align: left;
+}
+
+.custom-comrewmang-button-top {
+    margin-top: 20px;
+}
+
+.custom-comrewmang-col-md-5 {
+    float: left;
+    width: 49.667%;
+}
+
+/**************Transaction History Page Start***************/
+
+.custom-transhistory-col-md-1 {
+    width: 3.7%;
+    float: left;
+    margin-left: 1%;
+}
+
+.custom-transhistory-col-md-4 {
+    width: 35.8%;
+    float: left;
+    margin-left: 1.5%;
+}
+
+.custom-transhistory-col-md-3 {
+    width: 22%;
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+.custom-transhistory-apply-button {
+    margin-left: 2%;
+}
+
+.custom-transhistory-span-padding {
+    padding: 0px 48px;
+}
+
+.custom-transhistory-grid-bottom-margin {
+    margin-bottom: 10px;
+}
+
+.custom-transhistory-modalpopup-header {
+    background-color: #428BCA;
+    color: white;
+}
+
+/**************Community Owner Dashboard Page Start*****************/
+
+.custom-comownacc-col-md-3 {
+    width: 23%;
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+.custom-comownacc-col-md-1 {
+    width: 3.7%;
+    float: left;
+    margin-left: 1%;
+}
+
+.custom-comownacc-col-md-4 {
+    width: 35.8%;
+    float: left;
+    margin-left: 1.5%;
+}
+
+/****************Customer Management Page Start*********************/
+
+.custom-custmang-top-margin {
+    margin-top: 20px;
+}
+
+/*****************Manage Access Rights Page Start*******************/
+
+.custom-manaccrights-button-rightalign {
+    margin-left: 9.5%;
+}
+
+/*********************Transfer Fund Page Start**********************/
+
+.custom-transfund-currenry-label {
+    width: 20%;
+    float: left;
+}
+
+.custom-transfund-ammount-label {
+    width: 50%;
+    float: left;
+}
+
+.custom-transfund-backbutton-rightalign {
+    margin-left: 19.5%;
+}
+
+/*********************Transfer Fund Page End************************/
+
+.innermodal {
+    position: fixed;
+    border: 1px solid #CCC;
+    z-index: 100000;
+    /*border-radius: 25px;*/
+    top: 450px;
+    /*left: 850px;*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background: #fff url('../images/loading.gif') 50% 50% no-repeat;
+}
+
+
+.has-success .form-control {
+    color: #34495e;
+    border: 2px solid #bdc3c7;
+}
+
+/*********************Payment************************/
+
+ul.payment-types {
+    margin: 0;
+}
+
+    ul.payment-types li {
+        float: left;
+        list-style: none outside none;
+        padding: 0;
+    }
+
+.payment-types a {
+    background: url("../images/sprite-button-icons.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 38px;
+    margin: 0 7px 0 0;
+    text-indent: -9999em;
+    width: 34px;
+}
+
+    .payment-types a.Visa {
+        background-position: -11px -182px;
+    }
+
+    .payment-types a.Mastercard {
+        background-position: -54px -182px;
+    }
+
+    .payment-types a.Amex {
+        background-position: -94px -182px;
+        margin: 0 5px 0 0;
+        width: 39px;
+    }
+
+    .payment-types a.Paypal {
+        background-position: -138px -183px;
+        width: 40px;
+    }
+
+    .payment-types a.GE {
+        background-position: -183px -183px;
+        width: 39px;
+    }
+
+.visible-desktop {
+    display: inherit !important;
+}
+
+.visible-phone {
+    display: none !important;
+}
+
+.span12 {
+    width: 972px;
+}
+
+[class*="span"] {
+    float: left;
+    margin-left: 12px;
+    min-height: 1px;
+}

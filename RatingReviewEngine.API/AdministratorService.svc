@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="RatingReviewEngine.API.AdministratorService" CodeBehind="AdministratorService.svc.cs" %>
