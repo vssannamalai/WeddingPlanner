@@ -1,0 +1,5 @@
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.WorldPay\bin\Debug\RatingReviewEngine.WorldPay.dll
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.WorldPay\bin\Debug\RatingReviewEngine.WorldPay.pdb
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.WorldPay\obj\Debug\RatingReviewEngine.WorldPay.csprojResolveAssemblyReference.cache
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.WorldPay\obj\Debug\RatingReviewEngine.WorldPay.dll
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.WorldPay\obj\Debug\RatingReviewEngine.WorldPay.pdb
