@@ -6,7 +6,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Routing;
 
-using Common.Logging;
+//using Common.Logging;
 using Quartz;
 using Quartz.Impl;
 
@@ -20,62 +20,62 @@ namespace RatingReviewEngine.Web
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            App_Start.AuthConfig.RegisterOpenAuth();
-            App_Start.RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //App_Start.AuthConfig.RegisterOpenAuth();
+            //App_Start.RouteConfig.RegisterRoutes(RouteTable.Routes);
 
 
-            ISchedulerFactory sf = new StdSchedulerFactory();
+            //ISchedulerFactory sf = new StdSchedulerFactory();
 
-            IScheduler sched = sf.GetScheduler();
-
-
-            DateTimeOffset startTime = DateBuilder.NextGivenSecondDate(null, 15);
+            //IScheduler sched = sf.GetScheduler();
 
 
-
-            IJobDetail job2 = JobBuilder.Create<MonthlyBillingCycle>()
-                .WithIdentity("MonthlyBillingCycle", "supplier1")
-                .Build();
-
-            ICronTrigger trigger2 = (ICronTrigger)TriggerBuilder.Create()
-                                                        .WithIdentity("MonthlyBillingCycletrigger", "group2")
-                                                        .WithCronSchedule("0 30 11 25 * ?")// Fire at 11:30am on the 25th day of every month
-
-                                                        .StartNow()
-                                                        .Build();
-
-            sched.ScheduleJob(job2, trigger2);
+            //DateTimeOffset startTime = DateBuilder.NextGivenSecondDate(null, 15);
 
 
-            IJobDetail job = JobBuilder.Create<BillFreeEndDateUpdate>()
-                 .WithIdentity("billfreeendupdate", "supplier")
-                 .Build();
 
-            ISimpleTrigger trigger = (ISimpleTrigger)TriggerBuilder.Create()
-                                                        .WithIdentity("billfreeupdatetrigger", "group1")
-                                                        .StartAt(startTime)
-                                                         .WithSimpleSchedule(x => x
-                                                         .WithIntervalInHours(24)
-                                                         .RepeatForever())
-                                                        .Build();
+            //IJobDetail job2 = JobBuilder.Create<MonthlyBillingCycle>()
+            //    .WithIdentity("MonthlyBillingCycle", "supplier1")
+            //    .Build();
 
-            sched.ScheduleJob(job, trigger);
+            //ICronTrigger trigger2 = (ICronTrigger)TriggerBuilder.Create()
+            //                                            .WithIdentity("MonthlyBillingCycletrigger", "group2")
+            //                                            .WithCronSchedule("0 30 11 25 * ?")// Fire at 11:30am on the 25th day of every month
 
-            IJobDetail fileDelete = JobBuilder.Create<TempFileDelete>()
-                .WithIdentity("TempFileDelete", "file")
-                .Build();
+            //                                            .StartNow()
+            //                                            .Build();
 
-            ISimpleTrigger trigger3 = (ISimpleTrigger)TriggerBuilder.Create()
-                                                        .WithIdentity("TempFileDeletetrigger", "group3")
-                                                        .StartAt(startTime)
-                                                         .WithSimpleSchedule(x => x
-                                                         .WithIntervalInHours(24)
-                                                         .RepeatForever())
-                                                        .Build();
+            //sched.ScheduleJob(job2, trigger2);
 
-            sched.ScheduleJob(fileDelete, trigger3);
 
-            sched.Start();
+            //IJobDetail job = JobBuilder.Create<BillFreeEndDateUpdate>()
+            //     .WithIdentity("billfreeendupdate", "supplier")
+            //     .Build();
+
+            //ISimpleTrigger trigger = (ISimpleTrigger)TriggerBuilder.Create()
+            //                                            .WithIdentity("billfreeupdatetrigger", "group1")
+            //                                            .StartAt(startTime)
+            //                                             .WithSimpleSchedule(x => x
+            //                                             .WithIntervalInHours(24)
+            //                                             .RepeatForever())
+            //                                            .Build();
+
+            //sched.ScheduleJob(job, trigger);
+
+            //IJobDetail fileDelete = JobBuilder.Create<TempFileDelete>()
+            //    .WithIdentity("TempFileDelete", "file")
+            //    .Build();
+
+            //ISimpleTrigger trigger3 = (ISimpleTrigger)TriggerBuilder.Create()
+            //                                            .WithIdentity("TempFileDeletetrigger", "group3")
+            //                                            .StartAt(startTime)
+            //                                             .WithSimpleSchedule(x => x
+            //                                             .WithIntervalInHours(24)
+            //                                             .RepeatForever())
+            //                                            .Build();
+
+            //sched.ScheduleJob(fileDelete, trigger3);
+
+            //sched.Start();
 
         }
 

@@ -3,3 +3,8 @@ D:\Projects\Data\bin\RatingReviewEngine.Business.pdb
 D:\Projects\Data\MHW\RatingReviewEngine.Business\obj\Debug\RatingReviewEngine.Business.csprojResolveAssemblyReference.cache
 D:\Projects\Data\MHW\RatingReviewEngine.Business\obj\Debug\RatingReviewEngine.Business.dll
 D:\Projects\Data\MHW\RatingReviewEngine.Business\obj\Debug\RatingReviewEngine.Business.pdb
+D:\Projects\Data\MHW\bin\RatingReviewEngine.Business.dll
+D:\Projects\Data\MHW\bin\RatingReviewEngine.Business.pdb
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.Business\obj\Debug\RatingReviewEngine.Business.csprojResolveAssemblyReference.cache
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.Business\obj\Debug\RatingReviewEngine.Business.dll
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.Business\obj\Debug\RatingReviewEngine.Business.pdb

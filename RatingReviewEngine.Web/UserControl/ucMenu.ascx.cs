@@ -48,12 +48,12 @@ namespace RatingReviewEngine.Web.UserControl
                 httpWebRequest.Headers.Add("APIToken", ConfigurationHelper.APIToken);
                 httpWebRequest.Headers.Add("AuthToken", string.Empty);
 
-                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-                {
-                    var result = streamReader.ReadToEnd();
-                    SessionHelper.AllowedPages = result.Replace("\"", "");
-                }
+                //var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                //using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                //{
+                //    var result = streamReader.ReadToEnd();
+                //    SessionHelper.AllowedPages = result.Replace("\"", "");
+                //}
             }
 
           

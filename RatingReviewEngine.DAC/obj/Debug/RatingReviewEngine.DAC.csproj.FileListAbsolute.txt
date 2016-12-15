@@ -4,3 +4,9 @@ D:\Projects\Data\bin\RatingsReviewsEngine.DAC.pdb
 D:\Projects\Data\MHW\RatingReviewEngine.DAC\obj\Debug\RatingReviewEngine.DAC.csprojResolveAssemblyReference.cache
 D:\Projects\Data\MHW\RatingReviewEngine.DAC\obj\Debug\RatingsReviewsEngine.DAC.dll
 D:\Projects\Data\MHW\RatingReviewEngine.DAC\obj\Debug\RatingsReviewsEngine.DAC.pdb
+D:\Projects\Data\MHW\bin\RatingsReviewsEngine.DAC.dll.config
+D:\Projects\Data\MHW\bin\RatingsReviewsEngine.DAC.dll
+D:\Projects\Data\MHW\bin\RatingsReviewsEngine.DAC.pdb
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.DAC\obj\Debug\RatingReviewEngine.DAC.csprojResolveAssemblyReference.cache
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.DAC\obj\Debug\RatingsReviewsEngine.DAC.dll
+D:\Projects\Data\MHW\vssrepo\RatingReviewEngine.DAC\obj\Debug\RatingsReviewsEngine.DAC.pdb
