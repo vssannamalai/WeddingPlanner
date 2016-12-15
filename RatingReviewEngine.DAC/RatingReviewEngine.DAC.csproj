@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MySqlScript\2014-03-24.sql" />
+    <Content Include="MySqlScript\MHJ 13122016.sql" />
     <Content Include="MySqlScript\RatingReviewEngine_20140326.sql" />
     <Content Include="MySqlScript\RatingReviewEngine_20140331.sql" />
     <Content Include="MySqlScript\RatingReviewEngine_20140403.sql" />
